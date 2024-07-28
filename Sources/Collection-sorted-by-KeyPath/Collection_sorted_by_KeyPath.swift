@@ -9,10 +9,11 @@
 extension Collection {
     
     ///
-    public func sorted
-        <Value: Comparable>
-        (by keyPath: KeyPath<Element, Value>)
-    -> [Element] {
+    public func sorted<
+        Value: Comparable
+    >(
+        by keyPath: KeyPath<Element, Value>
+    ) -> [Element] {
         
         ///
         self.sorted(by: {
